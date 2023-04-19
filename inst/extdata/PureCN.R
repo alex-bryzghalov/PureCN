@@ -1,5 +1,6 @@
 suppressPackageStartupMessages(library(optparse))
 suppressPackageStartupMessages(library(futile.logger))
+library("PSCBS", lib.loc="/opt/conda/envs/workenv/lib/R/library")
 
 ### Parsing command line ------------------------------------------------------
 option_list <- list(
