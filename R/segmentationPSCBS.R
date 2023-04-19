@@ -89,7 +89,7 @@ segmentationPSCBS <- function(normal, tumor, log.ratio, seg, plot.cnv,
     boost.on.target.max.size = 30, min.logr.sdev = 0.15,
     prune.hclust.h = NULL, prune.hclust.method = "ward.D", chr.hash = NULL,
     additional.cmd.args = "", centromeres = NULL, ...) {
-    print(.libPaths())
+    library("PSCBS", lib.loc="/opt/conda/envs/workenv/lib/R/library")
     if (!requireNamespace("PSCBS", quietly = TRUE)) {
         .stopUserError("segmentationPSCBS requires the PSCBS package.")
     }
